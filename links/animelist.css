@@ -1,0 +1,267 @@
+/*----------------------------------------HTML----------------------------------------*/
+*{
+	box-sizing:border-box;
+	font-variant:small-caps;
+	text-transform:capitalize;
+	word-wrap:break-word;
+}
+/*----------------------------------------HEADER----------------------------------------class*/
+.header{
+	font-family:"ar destine";
+	text-align:center;
+	background:radial-gradient(black,gray,black);
+}
+/*----------------------------------------BORDER----------------------------------------class*/
+.border{
+	border:5px ridge white;
+	
+}
+/*----------------------------------------FIXED----------------------------------------class*/
+.fixed{
+	position:fixed;
+	overflow:auto;
+}
+/*----------------------------------------ALL ZERO----------------------------------------class*/
+.zero{
+	margin:0;
+	padding:0;
+}
+/*----------------------------------------TOOLTIP----------------------------------------class*/
+.tooltip{
+	display:inline;
+	color:white;
+	padding:5px;
+}
+.tooltip-content{
+    display:none;
+}
+.tooltip:hover .tooltip-content{
+	display:inline;
+}
+.tooltip-cover{
+	border:3px solid white;
+	width:250px;
+	height:150px;
+	margin-left:100%;
+}/*----------------------------------------DROPDOWN----------------------------------------class*/
+.dropdown{
+	display:block;
+	color:white;
+	padding:5px;
+}
+.dropdown-content{
+    height:0px;	
+	position:absolute;
+	
+}
+.dropdown:hover .dropdown-content{
+	height:645px;
+	transition:1s linear;
+}
+.dropdown-cover{
+	border:3px solid white;
+	width:250px;
+	height:150px;
+	margin-left:100%;
+}}/*----------------------------------------DROPDOWN-----------------------------------------class*/
+.dropdown{
+	display:block;
+	color:white;
+	padding:5px;
+}
+.dropdown-content{
+    height:0px;	
+	position:absolute;
+	
+}
+.dropdown:hover .dropdown-content{
+	height:645px;
+	transition:1s linear;
+}
+.dropdown-cover{
+	border:3px solid white;
+	width:250px;
+	height:150px;
+	margin-left:100%;
+}
+/*----------------------------------------CUSTOM DROPDOWN----------------------------------------class*/
+.ddhover{
+	height:62px;
+}
+/*----------------------------------------VIDEO-LINK----------------------------------------class*/
+.video:link{
+	color:lightgreen;
+	text-decoration:none;
+}
+.video:visited{
+	color:lightgray;
+	text-decoration:none;
+}
+.video:hover{
+	color:white;
+	text-decoration:none;
+}
+.video:active{
+	color:black;
+	text-decoration:none;
+}
+.video:focus{
+	color:white;
+	font-size:120%;
+}
+/*----------------------------------------PAGE-LINK----------------------------------------class*/
+.link:link,.link:visited{
+	color:white;
+	text-decoration:none;
+	display:block;
+	border:3px inset;
+	text-shadow: 0px 0px 16px black, 0 0 200px gray, 0 0 30px white;
+}
+.link:hover,.link:active{
+	color:lightgray;
+	text-decoration:none;
+}
+/*----------------------------------------EPISODE-LIST----------------------------------------class*/
+.episodes{
+	border:3px outset white;
+	padding:1em	;
+	border-radius:20px;
+	background:linear-gradient(to right,black,gray,black);
+}
+/*----------------------------------------SUMMARY.VIDEO----------------------------------------class*/
+summary.video{
+	color:white;
+	border:outset;
+	padding:5px;
+	border-radius:20px;
+}
+summary.video:hover{
+	color:lightgray;
+	border:inset;
+}
+.musicname{
+	font-size:1.5em;
+}
+/*----------------------------------------SPIN----------------------------------------class*/
+.spinY:hover{
+	transform:rotateY(720deg);
+	transition:1s linear;
+}
+.spinZ:hover{
+	transform:rotateZ(-720deg);
+	transition:1s linear;
+}
+.spinX:hover{
+	transform:rotateX(720deg);
+	transition:1s linear;
+}
+.transition{
+	transition:1s linear;
+}
+/*----------------------------------------TESTS----------------------------------------class*/
+
+.music:hover{
+	height:150px;
+	width:300px;
+	transition:1s;
+}
+.music{
+	height:50px;
+	width:50px;
+}
+
+
+	/*
+	<!--this is the format for the video
+	
+	
+			<details><summary class="video">NAME</summary>
+				<ul class="episodes" type="none">
+					<li><a class="video" href="../anime/REPLACEWITHNAME/01.mp4" target="preview">Episode 01</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/02.mp4" target="preview">Episode 02</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/03.mp4" target="preview">Episode 03</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/04.mp4" target="preview">Episode 04</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/05.mp4" target="preview">Episode 05</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/06.mp4" target="preview">Episode 06</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/07.mp4" target="preview">Episode 07</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/08.mp4" target="preview">Episode 08</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/09.mp4" target="preview">Episode 09</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/10.mp4" target="preview">Episode 10</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/11.mp4" target="preview">Episode 11</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/12.mp4" target="preview">Episode 12</a></li>
+				</ul>
+			</details>
+			
+			
+			<details><summary class="video">NAME</summary>
+				<ul class="episodes" type="none">
+					<li><a class="video" href="../anime/REPLACEWITHNAME/01.mp4" target="preview">Episode 01</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/02.mp4" target="preview">Episode 02</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/03.mp4" target="preview">Episode 03</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/04.mp4" target="preview">Episode 04</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/05.mp4" target="preview">Episode 05</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/06.mp4" target="preview">Episode 06</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/07.mp4" target="preview">Episode 07</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/08.mp4" target="preview">Episode 08</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/09.mp4" target="preview">Episode 09</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/10.mp4" target="preview">Episode 10</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/11.mp4" target="preview">Episode 11</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/12.mp4" target="preview">Episode 12</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/13.mp4" target="preview">Episode 13</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/14.mp4" target="preview">Episode 14</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/15.mp4" target="preview">Episode 15</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/16.mp4" target="preview">Episode 16</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/17.mp4" target="preview">Episode 17</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/18.mp4" target="preview">Episode 18</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/19.mp4" target="preview">Episode 19</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/20.mp4" target="preview">Episode 20</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/21.mp4" target="preview">Episode 21</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/22.mp4" target="preview">Episode 22</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/23.mp4" target="preview">Episode 23</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/24.mp4" target="preview">Episode 24</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/25.mp4" target="preview">Episode 25</a></li>
+				</ul>
+			</details>
+	
+			
+			<details><summary class="video">NAME</summary>
+				<ul class="episodes" type="none">
+					<li><a class="video" href="../anime/REPLACEWITHNAME/01.mp4" target="preview">Episode 01</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/02.mp4" target="preview">Episode 02</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/03.mp4" target="preview">Episode 03</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/04.mp4" target="preview">Episode 04</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/05.mp4" target="preview">Episode 05</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/06.mp4" target="preview">Episode 06</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/07.mp4" target="preview">Episode 07</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/08.mp4" target="preview">Episode 08</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/09.mp4" target="preview">Episode 09</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/10.mp4" target="preview">Episode 10</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/11.mp4" target="preview">Episode 11</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/12.mp4" target="preview">Episode 12</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/13.mp4" target="preview">Episode 13</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/14.mp4" target="preview">Episode 14</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/15.mp4" target="preview">Episode 15</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/16.mp4" target="preview">Episode 16</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/17.mp4" target="preview">Episode 17</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/18.mp4" target="preview">Episode 18</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/19.mp4" target="preview">Episode 19</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/20.mp4" target="preview">Episode 20</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/21.mp4" target="preview">Episode 21</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/22.mp4" target="preview">Episode 22</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/23.mp4" target="preview">Episode 23</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/24.mp4" target="preview">Episode 24</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/25.mp4" target="preview">Episode 25</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/26.mp4" target="preview">Episode 26</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/27.mp4" target="preview">Episode 27</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/28.mp4" target="preview">Episode 28</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/29.mp4" target="preview">Episode 29</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/30.mp4" target="preview">Episode 30</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/31.mp4" target="preview">Episode 31</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/32.mp4" target="preview">Episode 32</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/33.mp4" target="preview">Episode 33</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/34.mp4" target="preview">Episode 34</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/35.mp4" target="preview">Episode 35</a></li>
+					<li><a class="video" href="../anime/REPLACEWITHNAME/36.mp4" target="preview">Episode 36</a></li>
+				</ul>
+			</details>
+	*/

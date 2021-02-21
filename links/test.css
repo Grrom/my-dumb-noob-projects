@@ -1,0 +1,18 @@
+*{
+	text-transform:capitalize;
+	font-variant:small-caps;
+	color:white;
+}
+.header:link,.header:visited{
+	color:gray;
+	text-decoration:none;
+	text-shadow: 0 0 50px white;
+}
+.header:hover{
+	color:lightgray;
+	text-decoration:none;
+	transform:rotateY(180deg);
+}
+p{
+	padding:20px;
+}
